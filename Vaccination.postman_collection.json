@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "ceb6e5d0-66e4-49ac-abc5-0beeb381c26c",
+		"name": "Vaccination",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Inventory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyNTIscHNvbG9yemFubzMiLCJpc3MiOiJ2YWNjaW5hdGlvbiIsImlhdCI6MTYyOTQ0MDIxMSwiZXhwIjoxNjMwMDQ1MDExfQ.RaLoywiTspQ9MeUQB6AMJXUW1kjbBeq4_7Ld1j_sDKaoWfdgt5IKXMJrkMBkwmuIcwnPs4cgGeehmrl8a8xnJg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 4,\r\n        \"brand\": \"Moderna test\",\r\n        \"quantity\": 14\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/inventory/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Inventory",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyNTIscHNvbG9yemFubzMiLCJpc3MiOiJ2YWNjaW5hdGlvbiIsImlhdCI6MTYyOTQ0MDIxMSwiZXhwIjoxNjMwMDQ1MDExfQ.RaLoywiTspQ9MeUQB6AMJXUW1kjbBeq4_7Ld1j_sDKaoWfdgt5IKXMJrkMBkwmuIcwnPs4cgGeehmrl8a8xnJg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/inventory/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer xxx",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"psolorzano15\",\r\n    \"name\": \"Pablo f\",\r\n    \"surName\": \"Solorzano S\",\r\n    \"birthDate\": \"1978-03-05\",\r\n    \"password\": \"test1\",\r\n    \"identification\": \"1103447981\",\r\n    \"email\": \"test2@test.com\",\r\n    \"sicknessType\": \"NONE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"psolorzano3\",\r\n    \"password\": \"test1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

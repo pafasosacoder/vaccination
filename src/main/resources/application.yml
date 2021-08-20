@@ -1,0 +1,18 @@
+spring:
+  jackson:
+    default-property-inclusion: NON_NULL
+  # Database
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vaccination
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+
+      ddl-auto: update # When you launch the application for the first time - switch "none" at "create"
