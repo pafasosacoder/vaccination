@@ -1,7 +1,5 @@
 package ec.com.vaccination.backend.services;
 
-//import ec.com.vaccination.backend.config.VaccinationUserDetails;
-
 import ec.com.vaccination.backend.config.JwtTokenUtil;
 import ec.com.vaccination.backend.constants.SicknessType;
 import ec.com.vaccination.backend.dtos.UserLoginRequestDTO;
