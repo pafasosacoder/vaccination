@@ -88,7 +88,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userName\": \"psolorzano15\",\r\n    \"name\": \"Pablo f\",\r\n    \"surName\": \"Solorzano S\",\r\n    \"birthDate\": \"1978-03-05\",\r\n    \"password\": \"test1\",\r\n    \"identification\": \"1103447981\",\r\n    \"email\": \"test2@test.com\",\r\n    \"sicknessType\": \"NONE\"\r\n}",
+					"raw": "{\r\n    \"userName\": \"test1\",\r\n    \"name\": \"Pablo f\",\r\n    \"surName\": \"Solorzano S\",\r\n    \"birthDate\": \"1970-04-04\",\r\n    \"password\": \"test1\",\r\n    \"identification\": \"1234567897\",\r\n    \"email\": \"test2@test.com\",\r\n    \"sicknessType\": \"NONE\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -117,7 +117,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userName\": \"psolorzano3\",\r\n    \"password\": \"test1\"\r\n}",
+					"raw": "{\r\n    \"userName\": \"test1\",\r\n    \"password\": \"test1\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

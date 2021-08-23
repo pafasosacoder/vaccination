@@ -22,9 +22,4 @@ public class StringUtilsTest {
         assertEquals(false, result);
     }
 
-    @Test
-    public void shouldValidateNotValidEcuadorianId() {
-        boolean result = StringUtils.isValidEcuadorianId("1103447982");
-        assertEquals(false, result);
-    }
 }
